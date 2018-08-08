@@ -5,6 +5,14 @@
 	<link rel="stylesheet" type="text/css" href="">
 </head>
 <body>
-    <h1>This is the page for the student with id {{ student_id }}.</h1>
+    <h1>This is the page for the student with id {{ student.student_id }}:</h1>
+    <ul type="circle">
+        <li>Student Name: {{ student.name}}</li>
+        <li>Student Year: {{ student.year }}</li>
+        <li>Finished lab: {{ student.finished_lab }}</li>
+    </ul>
+
+    <a href="{{ url_for('home_route') }}">Back to home </a>
+    
 </body>
 </html>
